@@ -1,0 +1,25 @@
+body {
+    background-color: lemonchiffon;
+    background-image: url(https://cdn.wallpapersafari.com/8/1/FqEYG7.jpg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: blue;
+    font-family:cursive; 
+    font-size: 300%;
+}
+
+th {
+    color: rgb(245, 245, 0);
+    font-size: 135%;
+}
+
+td {
+    color: chartreuse;
+    font-size: 110%;
+}
+
+p {
+    color: cyan;
+}

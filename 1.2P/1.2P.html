@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!-- d.gurung@deakin.edu.au -->
+
+<html style="background-color: black">
+  <!-- This is head section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Followin is to add external stylesheet -->
+    <link rel="stylesheet" href="Style.css" />
+    <title>Husain</title>
+
+
+    <!-- Following is internal styleing CSS -->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid rgb(255, 2, 2);
+        padding: 15px;
+        /* border-collapse: collapse; */
+      }
+      tr:nth-child(odd) {
+        background-color: #607de8;
+      }
+      td:nth-child(even) {
+        background-color: #8f84ed;
+      }
+    </style>
+  </head>
+  <!-- This is body section -->
+
+  <body>
+    <h1
+      style="border: 3.5px solid violet; text-align: center; color: darkorange"
+    >
+      A.N.I.M.E ^^
+    </h1>
+    <h2>This is heading 2 ^^</h2>
+    <p>This is Paragraph tag.</p>
+    <a
+      href="https://wall.alphacoders.com/tag/gear-5-%28one-piece%29-wallpapers"
+      target="_blank"
+    >
+      <img
+        src="OnePiece.jpeg"
+        alt="One Piece Image"
+        width="550px"
+        ;
+        height="500px"
+      />
+    </a>
+    <img
+      src="https://media.tenor.com/cWfrMOkWik4AAAAC/luffy-gear5-gear5.gif"
+      alt="GIF Image"
+    />
+
+    <h1>===========================================================</h1>
+
+    <table style="width: 100%">
+      <tr>
+        <th>Anime Name</th>
+        <th>Fav Character</th>
+        <th>Best Moment</th>
+        <th>Want more of it?</th>
+      </tr>
+      <tr>
+        <td>Naruto</td>
+        <td>Naruto</td>
+        <td>Many beautiful moments</td>
+        <td rowspan="2"> Yuppiieee!!</td>
+      </tr>
+      <tr>
+        <td>One Piece</td>
+        <td>Monket D. Luffy</td>
+        <td>Nika - Sun God</td>
+        <!-- <td>Yuppie ^^</td> -->
+      </tr>
+    </table>
+
+    <a
+      style="background-color: rgb(0, 0, 0); color: rgb(255, 0, 0)"
+      ;
+      href="https://aniwatch.to/one-piece-100?ref=search"
+      target="_blank"
+    >
+      WATCH ONE PIECE NOW!!
+    </a>
+
+    <p style="text-align: center; font-size: 120%; background-color: black">
+      Tell us your favourite Anime of all time
+    </p>
+
+    <form style="text-align: center" target="_self">
+      <label for="fname">Your Name</label>
+      <input type="text" id="fname" name="fname" />
+
+      <label for="FAnime">Fav Anime</label>
+      <input type="text" id="FAnime" name="FAnime" />
+
+      <input type="submit" onclick="alert ('Thank you for the submission')" value="Submit">
+      <input type="reset">
+    </form>
+
+    <h1>
+      ============================================================================
+    </h1>
+
+    <h1>Java Script Time</h1>
+    <!-- Java Script-->
+    <!-- Create HTML elements to display the output -->
+    <div id="stringMethods"></div>
+    <div id="numberMethods"></div>
+    <div id="arrayMethods"></div>
+    <div id="dateMethods"></div>
+    <div id="functionMethods"></div>
+
+    <script>
+        function showHiddenText() {
+        document.getElementById("demo").innerHTML = "Hope you liked it ^^";
+        // String methods
+        let text = "Hello, World!";
+        document.getElementById("stringMethods").textContent = `String Methods: ${text.toUpperCase()}, Length: ${text.length}, Substring: ${text.substring(0, 5)}, Replaced: ${text.replace("World", "Universe")}, Split: ${text.split(", ").join(", ")}`;
+        
+        // Number methods
+        let num = 123.456;
+        document.getElementById("numberMethods").textContent = `Number Methods: ${num.toFixed(2)}, String: ${num.toString()}, Integer: ${parseInt("42")}, Float: ${parseFloat("3.14")}, Random: ${Math.random()}`;
+
+        // Array methods
+        let colors = ["red", "green", "blue"];
+        document.getElementById("arrayMethods").textContent = `Array Methods: ${colors.join(", ")}, Pushed: ${colors.push("yellow")}, Popped: ${colors.pop()}, Shifted: ${colors.shift()}, Sliced: ${colors.slice(1, 2).join(", ")}`;
+
+        // Date methods
+        let now = new Date();
+        document.getElementById("dateMethods").textContent = `Date Methods: Year: ${now.getFullYear()}, Month: ${now.getMonth() + 1}, Date: ${now.getDate()}, Hours: ${now.getHours()}, Minutes: ${now.getMinutes()}`;
+        
+        // Function methods
+        function greet(name) {
+            document.getElementById("functionMethods").textContent = `Function Methods: Greetings, ${name}!`;
+        }
+        let sayHi = greet;
+        sayHi("Husain");
+      }
+    </script>
+
+    <button onclick="showHiddenText()">Click me</button>
+    <p id="demo"></p>
+  </body>
+</html>
